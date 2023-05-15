@@ -3,7 +3,7 @@ pipeline{
     stages{
         stage('checkout code'){
             steps{
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/bvenkydevops/nodejs-cicd-main.git']] )
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/veeraboinaashok/nodejs-cicd-main.git']] )
             }
         }
         stage('Build docker image'){
